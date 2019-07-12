@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<head> 
+<title> Coming Soon </title> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    <style> 
+    
+    
+      .middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+    hr {
+  margin: auto;
+  width: 30%;
+} 
+        .myButton {
+	-moz-box-shadow: 1px -2px 22px 3px #508f5f;
+	-webkit-box-shadow: 1px -2px 22px 3px #508f5f;
+	box-shadow: 1px -2px 22px 3px #508f5f;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9edba5), color-stop(1, #c6cf80));
+	background:-moz-linear-gradient(top, #9edba5 5%, #c6cf80 100%);
+	background:-webkit-linear-gradient(top, #9edba5 5%, #c6cf80 100%);
+	background:-o-linear-gradient(top, #9edba5 5%, #c6cf80 100%);
+	background:-ms-linear-gradient(top, #9edba5 5%, #c6cf80 100%);
+	background:linear-gradient(to bottom, #9edba5 5%, #c6cf80 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9edba5', endColorstr='#c6cf80',GradientType=0);
+	background-color:#9edba5;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:6px solid #cccca7;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	padding:10px 12px;
+	text-decoration:none;
+	text-shadow:-1px -3px 14px #4a4d54;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c6cf80), color-stop(1, #9edba5));
+	background:-moz-linear-gradient(top, #c6cf80 5%, #9edba5 100%);
+	background:-webkit-linear-gradient(top, #c6cf80 5%, #9edba5 100%);
+	background:-o-linear-gradient(top, #c6cf80 5%, #9edba5 100%);
+	background:-ms-linear-gradient(top, #c6cf80 5%, #9edba5 100%);
+	background:linear-gradient(to bottom, #c6cf80 5%, #9edba5 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6cf80', endColorstr='#9edba5',GradientType=0);
+	background-color:#c6cf80;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+    </style>
+</head> 
+<body background="bgimage.jpg"> 
+<div> 
+    <img src="logo.png" alt="Pic Not Found " height="100px" width="100px" > 
+    
+    </div>  
+    
+    
+    <div class="wrapper">
+	<h1>Coming Soon</h1>	
+	</div>
+    
+    <p id="demo" style="font-size:30px"></p> 
+    <hr> <center> <div class="wrapper">
+	<h1 style="font-family: monospace ; font-size: 33px">omarahmedyoussef.tk</h1>	
+	</div></center> 
+    
+    
+    <script>
+var countDownDate = new Date("Jan 5, 2020 15:37:25").getTime();
+
+var x = setInterval(function() {
+
+ 
+  var now = new Date().getTime();
+
+  
+  var distance = countDownDate - now;
+
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  
+  document.getElementById("demo").innerHTML ="<center> <span class='myButton'>" + days  + " Days  </span> <span class='myButton'>" + hours + " Hours  </span> <span class='myButton'>"
+  + minutes + " Min </span><span class='myButton'>  &nbsp " + seconds + " Sec </span> </center> <br> <br>  "  ;
+
+ 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    <div id="subscribe"> 
+	<form action="" method="post" onsubmit="">
+		<p><input name="" placeholder="Email.." type="text" id=""/>
+		<input type="button" value="Submit"/></p>
+	</form>
+	<div id="socialIcons">
+		<ul> 
+			<li><a href="" title="Twitter" class="twitterIcon"></a></li>
+			<li><a href="" title="facebook" class="facebookIcon"></a></li>
+			<li><a href="" title="linkedIn" class="linkedInIcon"></a></li>
+			<li><a href="" title="Pintrest" class="pintrestIcon"></a></li>
+		</ul>
+	</div>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+</body>
